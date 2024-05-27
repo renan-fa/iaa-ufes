@@ -1,23 +1,23 @@
-# **Gemini Pro ChatBot**
+# **ChatBot Gemini Pro**
 
 ![chatbot-gif ‐ Clipchamp ile yapıldı](https://github.com/ahmetdzdrr/gemini-pro-chatbot/assets/117534684/41018d7b-5253-4273-bddd-83277afe95fe)
 
-## **Table of Contents**
+## **Índice**
 
-- [Introduction](#introduction)
-- [Technologies Used](#tech-used)
-- [What is Flask?](#what-is-flask)
-- [Project Overview](#project-overview)
-- [How to Create Google API?](#how-to-create-google-api)
-- [Installation](#installation)
-- [Usage Code](#usage)
-- [Contribution](#contribution)
+- [Introdução](#introdução)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [O que é Flask?](#o-que-é-flask)
+- [Visão Geral do Projeto](#visão-geral-do-projeto)
+- [Como Criar a API do Google?](#como-criar-a-api-do-google)
+- [Instalação](#instalação)
+- [Código de Uso](#código-de-uso)
+- [Contribuição](#contribuição)
 
-## **Introduction**
+## **Introdução**
 
-This Flask-based chat application is being developed with utilizing HTML, CSS, and JS. This project encompasses Gemini, an AI-powered conversational chatbot.
+Esta aplicação de chat baseada em Flask está sendo desenvolvida utilizando HTML, CSS e JS. Este projeto engloba o Gemini, um chatbot conversacional com tecnologia de IA.
 
-## **Technologies Used**
+## **Tecnologias Utilizadas**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
@@ -25,71 +25,71 @@ This Flask-based chat application is being developed with utilizing HTML, CSS, a
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## **What is Flask?**
+## **O que é Flask?**
 
-Flask is a Python-based web application development framework. Known for its minimalist and flexible nature, it's used for creating web applications and APIs. While providing core functionality, it accommodates various needs through an extensive extension system. It offers basic features like routing, handling HTTP requests, template support, and is often preferred for quickly prototyping or developing mid-sized projects.
+Flask é um framework de desenvolvimento de aplicativos web baseado em Python. Conhecido por sua natureza minimalista e flexível, é usado para criar aplicativos web e APIs. Embora forneça funcionalidade central, ele acomoda várias necessidades por meio de um sistema de extensões extensivo. Ele oferece recursos básicos como roteamento, manipulação de solicitações HTTP, suporte a templates e é frequentemente preferido para prototipagem rápida ou desenvolvimento de projetos de médio porte.
 
-## **Project Overview**
+## **Visão Geral do Projeto**
 
-The folders in the project are as follows:
+As pastas no projeto são as seguintes:
 
-- **.env**: This file contain Gemini API KEY and SECRET KEY. You have to configure those keys.
-- **static**: Contains CSS and JavaScript codes along with various icons and images.
-- **templates**: Stores HTML code necessary for deploying the Flask application.
-- **requirements.txt**: It has some dependencies libraries for installation.
+- **.env**: Este arquivo contém a CHAVE DA API do Gemini e a CHAVE SECRETA. Você deve configurar essas chaves.
+- **static**: Contém códigos CSS e JavaScript, juntamente com vários ícones e imagens.
+- **templates**: Armazena o código HTML necessário para a implantação da aplicação Flask.
+- **requirements.txt**: Contém bibliotecas de dependências para instalação.
 
 > ### **app.py**
 
-The file contains route codes provided by the Flask framework. When the site is deployed, the route directions within the app.py file operate based on actions on the site, directing the flow of the site accordingly.
+O arquivo contém códigos de rotas fornecidos pelo framework Flask. Quando o site é implantado, as direções das rotas dentro do arquivo app.py operam com base nas ações no site, direcionando o fluxo do site de acordo.
 
 > ### **config.py**
 
-The file contains send-mail route codes. It provided to send mail with SMTP server and work on contact page with base configurations.
+O arquivo contém códigos de rotas de envio de e-mail. Ele fornece o envio de e-mail com servidor SMTP e funciona na página de contato com configurações básicas.
 
-## **How to Create Google API?**
+## **Como Criar a API do Google?**
 
-To utilize Google Gemini Pro, [click here](https://makersuite.google.com/app/apikey) to obtain your Google API Key and proceed with the steps.
+Para utilizar o Google Gemini Pro, [clique aqui](https://makersuite.google.com/app/apikey) para obter sua Chave de API do Google e prossiga com as etapas.
 
-## **Installation**
+## **Instalação**
 
-1.  Python 3.8+ is required to run this project.
-2.  Create a virtual environment: `python -m venv venv`
-3.  Activate the virtual environment:
+1.  Python 3.8+ é necessário para executar este projeto.
+2.  Crie um ambiente virtual: `python -m venv venv`
+3.  Ative o ambiente virtual:
     - Windows: `venv\Scripts\activate`
-    - Unix or MacOS: `source venv/bin/activate`
-4.  Create a `.env` file and add required environmental variables:
+    - Unix ou MacOS: `source venv/bin/activate`
+4.  Crie um arquivo `.env` e adicione as variáveis ambientais necessárias:
 
-           GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
-           SECRET_KEY="YOUR_SECRET_KEY"
+           GOOGLE_API_KEY="SUA_CHAVE_DE_API_DO_GOOGLE"
+           SECRET_KEY="SUA_CHAVE_SECRETA"
 
-5.  Clone this repository to your local machine using Git:
+5.  Clone este repositório para sua máquina local usando Git:
 
          git clone https://github.com/ahmetdzdrr/gemini-pro-chatbot.git
 
-6.  Install the required Python libraries by running:
+6.  Instale as bibliotecas Python necessárias executando:
 
           pip install -r requirements.txt
 
-## **Usage Code**
+## **Código de Uso**
 
-- `/home` - Loads the homepage.
-- `/about` - Loads the about page.
-- `/contact` - Loads the contact page.
-- `/gemini` - Loads a page for using gemini pro model.
-- `/send-mail` - It's automatically send an email from contact page.
+- `/home` - Carrega a página inicial.
+- `/about` - Carrega a página sobre.
+- `/contact` - Carrega a página de contato.
+- `/gemini` - Carrega uma página para usar o modelo Gemini Pro.
+- `/send-mail` - Envia automaticamente um e-mail da página de contato.
 
-To run the project, follow these steps:
+Para executar o projeto, siga estas etapas:
 
-Open your terminal or command prompt.
+Abra seu terminal ou prompt de comando.
 
-Navigate to the directory where the project files are located.
+Navegue até o diretório onde os arquivos do projeto estão localizados.
 
-Enter the following command:
+Digite o seguinte comando:
 
 ```bash
 python app.py
 ```
 
-## **Contribution**
+## **Contribuição**
 
-Your contributions are welcome! If you wish to contribute, feel free to open a pull request. Please make sure to explain your changes.
+Suas contribuições são bem-vindas! Se você deseja contribuir, sinta-se à vontade para abrir uma solicitação de pull. Por favor, explique suas alterações.

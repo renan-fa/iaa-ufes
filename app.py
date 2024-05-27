@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 load_dotenv()
-from flask import Flask, render_template, request, flash, redirect, url_for, session, jsonify
+from flask import Flask, render_template, request, flash, redirect, url_for, session
 import os
 from flask_mail import Mail, Message
 from config import Config
@@ -14,7 +14,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Helper function to generate content
 def generate_content(input_text):
-    model = genai.GenerativeModel(model_name="gemini-pro")
+    model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")
     response = model.generate_content(input_text)
     return response.text
 
